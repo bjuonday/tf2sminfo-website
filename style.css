@@ -1,0 +1,289 @@
+* { transition: 0.35s; }
+@font-face {
+    font-family: Blackoak;
+    src: url('fnt/BlackoakStd.otf');
+}
+@font-face {
+    font-family: Compacta;
+    src: url('fnt/unicode.compacta.ttf');
+}
+@font-face {
+    font-family: TF2;
+    src: url('fnt/TF2.ttf');
+}
+@font-face {
+    font-family: TF2Build;
+    src: url('fnt/TF2Build.ttf');
+}
+@font-face {
+    font-family: 'TF2 Secondary';
+    src: url('fnt/TF2secondary.ttf');
+}
+body {
+    margin: 0;
+    background: #2b2724;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button {
+    border: 0;
+}
+h1,h2,h3,h4,h5,h6, .footer-bottom {
+    font-family: "TF2Build";
+}
+.title {
+    font-family: "Blackoak";
+    font-size: 48px;
+}
+/* nav */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-family: "TF2Build", sans-serif;
+    padding-top: 20px;
+    padding-right: 60px;
+    height: 40px;
+    background: #34302d;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav .logo {
+    height: 40px;
+    margin-top: -8px;
+    position: absolute;
+    left: 50px;
+}
+nav a, .container .row a {
+    text-decoration: none;
+}
+.container .row a:hover { text-decoration: underline; }
+nav a {
+    color: white;
+    font-size: 18px;
+}
+nav a { margin-right: 50px; }
+nav a:last-child { margin-right: 0; }
+nav a:hover { color: #ffd700; }
+
+/* header */
+.header {
+    font-family: "TF2 Secondary", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('img/underconstruction.png') center bottom;
+    background-repeat: repeat;
+    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white !important;
+    text-align: center;
+    padding: 250px 0;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #000000;
+}
+.header img.logo {
+    width: 50%;
+}
+.header .slogan {
+    background: rgba(0,0,0,0.75);
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: white;
+}
+.container h2 {
+  color: #ffd700;
+}
+.container .row .logo {
+    width: 163px;
+}
+.container i.fa {
+    width: 113px;
+    font-size: 6em;
+    color: transparent;
+    background-clip: text !important;
+    background: linear-gradient(0deg,grey,white);
+}
+.container .row {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #221e1b;
+  padding: 20px;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+.content {
+  flex: 1;
+  text-align: left;
+  margin-left: 20px;
+  font-family: "TF2 Secondary";
+}
+.content h2 img, .content h1 img {
+    margin-left: 30px;
+}
+.container .row a {
+    color: #7fb1e0;
+}
+.container .row a:hover {
+    color: #b9c9d8;
+}
+
+
+.footer {
+  background-color: #1d1b18;
+  color: white;
+  padding: 50px 0;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    text-align: left;
+}
+.footer-column h4 {
+    text-align: center; 
+}
+.footer-content {
+    text-align: center; 
+}
+.footer-content a {
+    color: white; /* Keep links white */
+    text-decoration: none; /* Remove underline */
+
+}
+.footer-content a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.footer-column:first-child {
+    text-align: center;
+}
+.footer-column .icon {
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    nav .logo {
+        display: none;
+    }
+    nav {
+        justify-content: center;
+    }
+    .header .slogan {
+        font-size: 1em;
+    }
+}
+
+/* Archives page */
+
+.folder-container {
+  overflow: hidden;
+  background-color: #221e1b;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #ffd700;
+  border-radius: 4px;
+}
+.folder-container .icon {
+  width: 256px;
+}
+.folder-container a {
+  color: #7fb1e0;
+}
+.folder-container a:hover {
+  color: #b9c9d8;
+}
+.folder-container button {
+    border-top: 1px solid !important;
+    border-left: 1px solid !important;
+    border-color: #fffdee;
+    font-family: "TF2Build", sans-serif;
+    font-size: 26px;
+    padding: 12px 36px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px black;
+    color: #2d2620;
+    background: linear-gradient(0deg,#9f8f6b,#dad0b7);
+}
+.folder-container button:hover {
+    cursor: pointer;
+    background: linear-gradient(0deg,#bdad8a,#dfdacd);
+}
+.folder-container button:active {
+    background: linear-gradient(0deg,#4d4533,#948d7b);
+    border-color: #fffdee;
+}
+.folder-container button i {
+    color: #665a52;
+}
+.folder-container .file-list {
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.folder-container .file-list tr:first-child th {
+    background-color: #a29782;
+    color: #1c1915;
+    text-align: left;
+}
+.folder-container .file-list tr {
+    background-color: #1c1915;
+    color: #a29782;
+}
+.folder-container .file-list tr td:first-child {
+    border-left: 1px solid #a29782;
+}
+.folder-container .file-list tr th, .folder-container .file-list tr td {
+    padding: 4px;
+    border-right: 1px solid #a29782;
+    border-bottom: 1px solid #a29782;
+}
+.folder-container .folder-title img {
+    width: 250px;
+    filter: drop-shadow(0 0 4px black) drop-shadow(0 0 4px black);
+}
+/* alias */
+
+.folder-container.af {
+  border-color: #df5bdf;
+  box-shadow: 0 0 6px #d44ad4;
+}
+.folder-container.af h1 {
+  color: #df5bdf;
+  text-shadow: 0 0 6px #d44ad4;
+}
+.folder-container.af h1 span {
+  color: #75bbe4;
+  text-shadow: 0 0 6px #6292ad;
+}
+.folder-container.af .icon {filter: hue-rotate(280deg);}
+.folder-container.fc {border-color: rgb(135, 89, 189);}
+.folder-container.fo {border-color: grey;}
+.folder-container.fz {border-color: green;}
+.folder-container.of {border-color: purple;}
+.folder-container.tf2g {border-color: #4d7455;}
+.folder-container.tf2v {border-color: #476291;}
